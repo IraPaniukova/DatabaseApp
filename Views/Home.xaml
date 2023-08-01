@@ -1,0 +1,33 @@
+﻿<Window x:Class="ProjectPaniukova.Views.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectPaniukova.Views"
+        mc:Ignorable="d"
+        Title="Home" Width="680" MinWidth="650" MinHeight="680">
+
+    <StackPanel HorizontalAlignment="Center">
+    <Grid>
+         <Menu Margin="0,0,0,690"  Background="Orange" >
+            
+             <MenuItem Header="Employee and Customer Management"  Padding="50,0,50,0" FontSize="16" FontWeight="DemiBold">
+                <MenuItem x:Name="UpdateMyInforMenuItem" Click="UpdateMyInforMenuItem_Click"  Header="Update my info" FontSize="18"/>
+                <MenuItem x:Name="ViewPersonMenuItem" Click="ViewPersonMenuItem_Click"  Header="View person" FontSize="18"/>
+                <MenuItem x:Name="ViewCustomerMenuItem" Click="ViewCustomerMenuItem_Click" Header="View customer" FontSize="18"/>
+                <MenuItem x:Name="UpdateCustomerMenuItem" Click="UpdateCustomerMenuItem_Click"  Header="Update customer" FontSize="18"/>
+                <MenuItem x:Name="ViewEmployeeMenuItem" Click="ViewEmployeeMenuItem_Click" Header="View employee" FontSize="18"/>
+                <MenuItem x:Name="ViewALLEmployeeMenuItem" Click="ViewALLEmployeeMenuItem_Click" Header="View all employees" FontSize="18"/>
+                <MenuItem x:Name="UpdateEmployeeMenuItem" Click="UpdateEmployeeMenuItem_Click" Header="Update employee (by admin)" FontSize="18"/>
+                <MenuItem x:Name="AddEmployeeMenuItem" Click="AddEmployeeMenuItem_Click" Header="Add Employee (by admin)"  FontSize="18"/>
+
+            </MenuItem>
+            <Button Name="LogoutButton" Margin="100,10,20,10"  Content="Log out"  Height="25" Width="118" Click="LogoutButton_Click" Background="DarkOrange" Foreground="White" FontSize="16"/>
+        </Menu>
+        <Grid>
+                            
+            <StackPanel x:Name ="centralPanel" Margin="20,100,20,20"/>
+         </Grid>
+      </Grid>
+</StackPanel>
+</Window>
